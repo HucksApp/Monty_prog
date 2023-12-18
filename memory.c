@@ -1,6 +1,13 @@
 #include "monty.h"
 
  
+
+
+
+/**
+ * garbageCollector - release memory out of use.
+ * @total: total memory release, _TRUE or _FALSE
+ */
 void garbageCollector(int total)
 {
     if(obj._line)
@@ -34,8 +41,10 @@ void garbageCollector(int total)
 }
 
 
-
-
+/**
+ * free_arr_strs - free array of strings
+ * @arr: strings array (array of arrays)
+ */
 void free_arr_strs(char **arr)
 {
     int index;
@@ -52,6 +61,11 @@ void free_arr_strs(char **arr)
 }
 
 
+
+/**
+ * freeSNode - free the stack_t (monty) node
+ * @head: head of stack_t
+ */
 void freeSNode(stackk_t *head)
 {
     stackk_t * curr = NULL;

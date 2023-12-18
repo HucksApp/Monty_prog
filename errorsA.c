@@ -1,7 +1,11 @@
 #include "monty.h"
 
 
-
+/**
+ * args_err - arguments error.
+ * @argc: argument count from main
+ * Return: _TRUE (1) or _FALSE (0)
+ */
 int args_err(int argc)
 {
    return((argc != 2)? _TRUE: _FALSE);
@@ -10,6 +14,12 @@ int args_err(int argc)
 
 
 
+/**
+ * file_err - file error
+ * @file_ptr: file pointer
+ * @arg: argument
+ * Return: _TRUE (1) or _FALSE (0)
+ */
 int file_err(FILE *file_ptr, char *arg)
 {
     if(!file_ptr)
@@ -22,6 +32,11 @@ int file_err(FILE *file_ptr, char *arg)
 
 
 
+
+/**
+ * operation_err - operation error
+ * Return: Void
+ */
 void operatn_err(void)
 {
     dprintf(STDERR_FILENO, UNKNOWN, obj.line_num, obj._tokens[0]);
@@ -29,6 +44,11 @@ void operatn_err(void)
     exit(EXIT_FAILURE);
 }
 
+
+/**
+ * instruction_err - instruction error
+ * @msg: error message
+ */
 
 void instruction_err(char * msg)
 {
@@ -38,8 +58,10 @@ void instruction_err(char * msg)
 }
 
 
-
-
+/**
+ * memory_err - memory allocation error
+ * Return: Void
+ */
 void memory_err(void)
 {
     dprintf(STDERR_FILENO, MALLOC_FAIL );

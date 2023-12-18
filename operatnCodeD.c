@@ -3,7 +3,7 @@
 
 /**
  * _pchar - pchar instruction
- * @stack: double pointer to the stack 
+ * @stack: pointer to the stack 
  * @line_numr: number of the line in the file
  */
 void _pchar(stackk_t **stack, UNUSED unsigned int line_num)

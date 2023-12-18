@@ -76,21 +76,30 @@ typedef struct monty_s
 } monty_t ;
 
 
-
+/*global variable obj of monty_t type*/
 extern monty_t obj;
 
 
 
 int (*fn(int flag))(int);
 int count_token_char(char *line, int flag);
+char * copy_token(int len, int flag, char* tok);
+void (*find_opcode(char **parsed))(stackk_t **, unsigned int);
 char ** _parser(char *line);
 int _putchar(char c);
 
+
+
+
+/* memmory helpers */
 void free_arr_strs(char **arr);
 void garbageCollector(int total);
-void (*find_opcode(char **parsed))(stackk_t **, unsigned int);
 void freeSNode(stackk_t *head);
 
+
+
+
+/* error handlers */
 int file_err(FILE *file_ptr, char *arg);
 int args_err(int argc);
 void operatn_err(void);
@@ -98,9 +107,9 @@ void instruction_err(char * msg);
 void memory_err(void);
 
 
-char * copy_token(int len, int flag, char* tok);
 
 
+/* stack_t node operations */
 stackk_t *createSNode(const int num);
 int _deleteSNodeAt(stackk_t **head, unsigned int pos);
 stackk_t *_appendSNode(stackk_t **head, const int num);
@@ -111,6 +120,7 @@ size_t sNodesLen(const stackk_t *head);
 stackk_t *_insertSNodeAt(stackk_t **head, unsigned int pos, int num);
 
 
+/* operation codes */
 void _pall(stackk_t **stack, UNUSED unsigned int line_num);
 void _push(stackk_t **stack, UNUSED unsigned int line_number);
 void _pint(stackk_t **stack, UNUSED unsigned int line_num);

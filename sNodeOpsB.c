@@ -1,6 +1,14 @@
 #include "monty.h"
 
 
+
+
+
+/**
+ * sNodesLen - Calculate the length of the stack
+ * @head: Pointer to the stack
+ * Return: Length of the stack
+ */
 size_t sNodesLen(const stackk_t *head)
 {
     size_t sNodes;
@@ -17,8 +25,12 @@ size_t sNodesLen(const stackk_t *head)
 
 
 
-
-
+/**
+ * _appendSNode - Add a node to the end of the stack
+ * @head: pointer to stack
+ * @num: Number to be stored in the new node
+ * Return: new node added
+ */
 stackk_t *_appendSNode(stackk_t **head, const int num)
 {
     stackk_t * new;
@@ -49,7 +61,13 @@ stackk_t *_appendSNode(stackk_t **head, const int num)
 
 
 
-
+/**
+ * _insertSNodeAt - insert node at a position in the stack
+ * @head: Pointer to stack
+ * @num: int data value of the node to be inserted
+ * @pos: position of insertion
+ * Return: the inserted node
+ */
 
 stackk_t *_insertSNodeAt(stackk_t **head, unsigned int pos, int num)
 {

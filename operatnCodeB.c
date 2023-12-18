@@ -1,6 +1,11 @@
 #include "monty.h"
 
 
+/**
+ * _nop - nop instruction
+ * @stack: head node stack
+ * @line_number: the current line number
+ */
 void _nop(stackk_t **stack, UNUSED unsigned int line_num)
 {
     (void) stack;
@@ -8,9 +13,11 @@ void _nop(stackk_t **stack, UNUSED unsigned int line_num)
 }
 
 
-
-
-
+/**
+ * _add -  add instruction
+ * @stack: head node of stack
+ * @line_number: the current line number
+ */
 void _add(stackk_t **stack, UNUSED unsigned int line_num)
 {
     int sum = 0;
@@ -37,7 +44,7 @@ void _add(stackk_t **stack, UNUSED unsigned int line_num)
 
 /**
  * _sub -  subtraction instruction
- * @stack: double pointer to the stack 
+ * @stack: pointer to the stack 
  * @line_num: number of the line in the file
  */
 void _sub(stackk_t **stack, UNUSED unsigned int line_num)
@@ -64,7 +71,7 @@ void _sub(stackk_t **stack, UNUSED unsigned int line_num)
 
 /**
  * _div - divsion instruction
- * @stack: double pointer to the stack 
+ * @stack: pointer to the stack 
  * @line_num: number of the line in the file
  */
 void _div(stackk_t **stack, UNUSED unsigned int line_num)
@@ -96,7 +103,7 @@ void _div(stackk_t **stack, UNUSED unsigned int line_num)
 
 /**
  * _mul-  multiply instruction
- * @stack: double pointer to the stack 
+ * @stack: pointer to the stack 
  * @line_num: number of the line in the file
  */
 void _mul(stackk_t **stack, UNUSED unsigned int line_num)

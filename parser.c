@@ -1,16 +1,24 @@
 #include "monty.h"
 
 
-
-
-
+/**
+ * fn - function pointer for alphas or nums
+ * @flag: alpha or num
+ * Return: a char type checker
+ */
 int (*fn(int flag))(int)
 {
     return ((flag)? isalpha : isdigit);
 }
 
 
-
+/**
+ * _char_start - get the starting point of 
+ * instruction name
+ * @line: string buffer
+ * @flag: num or alpha
+ * Return: starting index
+ */
 
 int char_start(char *line, int flag)
 {
@@ -29,8 +37,12 @@ int char_start(char *line, int flag)
 }
 
 
-
-
+/**
+ * count_token_char - get the token counts
+ * @line: string buffer
+ * @flag: num or alpha
+ * Return: token chars count
+ */
 int count_token_char(char *line, int flag)
 {
     int index, count = 0;
@@ -103,8 +115,13 @@ char ** _parser(char *line)
 }
 
 
-
-
+/**
+ * copy_token - adds a node to the beginning of a list
+ * @len: string len to copy
+ * @flag: alpha or nums
+ * @tok: strings of tokens
+ * Return: copied token
+ */
 char * copy_token(int len, int flag, char* tok)
 {
     int index;

@@ -2,7 +2,12 @@
 
 
 
-
+/**
+ * count_word - count tokens or words in a buffer
+ * @str: str buffer
+ * @delim: token or words seperator
+ * Return: word count
+ */
 int count_word(char *str, char delim)
 {
     int  index = 0, word_c = 0;

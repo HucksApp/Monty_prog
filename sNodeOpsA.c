@@ -1,7 +1,11 @@
 #include "monty.h"
 
 
-
+/**
+ * createSNode - Create a new node of stack_t
+ * @num: data value of new stack node
+ * Return: Pointer to the newly created node or NULL on failure
+ */
 stackk_t *createSNode(const int num)
 {
     stackk_t *new;
@@ -18,6 +22,13 @@ stackk_t *createSNode(const int num)
 }
 
 
+
+/**
+ * _deleteSNodeAt - Remove a node at a specific pos in the stack
+ * @head: Pointer to the head pointing to the stack
+ * @pos: index of the node to be removed
+ * Return: TRUE if the node is successfully removed, FALSE otherwise
+ */
 int _deleteSNodeAt(stackk_t **head, unsigned int pos)
 {
     unsigned int index = 0;
@@ -53,9 +64,12 @@ int _deleteSNodeAt(stackk_t **head, unsigned int pos)
 
 
 
-
-
-
+/**
+ * _prependSNode- Add a node to the beginning stack
+ * @head: pointer to stack
+ * @num: Number to be stored in the new node
+ * Return: Pointer to the newly added node or NULL on failure
+ */
 stackk_t *_prependSNode(stackk_t **head, const int num)
 {
     stackk_t *top;
@@ -85,7 +99,11 @@ stackk_t *_prependSNode(stackk_t **head, const int num)
 
 
 
-
+/**
+ * _printStack - prints data value in all stack nodes
+ * @head: pointer to stack
+ * Return: stack size or node length
+ */
 size_t _printStack(const stackk_t *head)
 {
     size_t stack ;
@@ -102,7 +120,12 @@ size_t _printStack(const stackk_t *head)
 
 
 
-
+/**
+ * _getSNodeAt - Get the  node at a given position
+ * @head: Pointer to the head of the stack
+ * @pos: position of the node
+ * Return: node at position or NULL
+ */
 stackk_t *_getSNodeAt(stackk_t *head, unsigned int pos)
 {
     unsigned int index = 0;

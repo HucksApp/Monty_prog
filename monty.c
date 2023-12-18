@@ -1,9 +1,15 @@
 #include "monty.h"
 
-
+/* Global variable obj of monty_t type */
  monty_t obj = INIT_OBJ;
 
 
+
+
+/**
+ * monty - read and execute monty code
+ * @argv: argument vector from main
+ */
 
 void monty(char** argv)
 {
@@ -23,7 +29,7 @@ void monty(char** argv)
     while(!feof(obj._file))
     {
         obj.line_num +=1;
-        getline(&(obj._line), &len, obj._file);
+        read_bytes = getline(&(obj._line), &len, obj._file);
             tokens = _parser(obj._line);
             if(tokens)
             {
@@ -33,28 +39,27 @@ void monty(char** argv)
                     garbageCollector(_FALSE);
                     continue;
                 }
-
-    
                 execute_func = find_opcode(obj._tokens);
                
                 if(!execute_func)
                     operatn_err();
                 
                 execute_func(&(obj._stack), obj.line_num);
-               
-                garbageCollector(_FALSE);
-                
+                garbageCollector(_FALSE); 
             }
-        
     }
-    
     garbageCollector(_TRUE);
-
 }
 
 
 
-
+/**
+ * main - main function or start of execution
+ * related to given token.
+ * @argv: arguments vector
+ * @argc: arguments count
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
 
 int main(int argc, char **argv)
 {

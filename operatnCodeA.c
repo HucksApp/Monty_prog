@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pushe - adds a node to the beginning of a list
+ * _push - adds a node to the beginning of a list
  * @stack: head node of our list
  * @line_number: the current line number
  */
@@ -27,6 +27,12 @@ void _push(stackk_t **stack, UNUSED unsigned int line_num)
 }
 
 
+/**
+ * _pall - print all the stack
+ * @stack: head node of  stack
+ * @line_number: the current line number
+ */
+
 
 void _pall(stackk_t **stack, UNUSED unsigned int line_num)
 {
@@ -34,7 +40,11 @@ void _pall(stackk_t **stack, UNUSED unsigned int line_num)
         _printStack(*stack);
 }
 
-
+/**
+ * _pint - print the int data member of the stack
+ * @stack: head node of stack
+ * @line_number: the current line number
+ */
 
 void _pint(stackk_t **stack, UNUSED unsigned int line_num)
 {
@@ -44,7 +54,11 @@ void _pint(stackk_t **stack, UNUSED unsigned int line_num)
     printf("%d\n", head->n);
 }
 
-
+/**
+ * _pop - remove a node from the start
+ * @stack: head node of stack
+ * @line_number: the current line number
+ */
 
 void _pop(stackk_t **stack, UNUSED unsigned int line_num)
 {
@@ -54,7 +68,11 @@ void _pop(stackk_t **stack, UNUSED unsigned int line_num)
    _deleteSNodeAt(stack, 0);
 }
 
-
+/**
+ * _swap - swap  node
+ * @stack: head node of stack
+ * @line_number: the current line number
+ */
 void _swap(stackk_t **stack, UNUSED unsigned int line_num)
 {
     int num;

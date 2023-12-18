@@ -1,8 +1,12 @@
 # include "monty.h"
 
 
-
-
+/**
+ * find_opcode - find the operation code
+ * related to given token.
+ * @parsed: passed tokens 
+ * Return: function pointer
+ */
 
 void (*find_opcode(char **parsed))(stackk_t **, unsigned int)
 {
