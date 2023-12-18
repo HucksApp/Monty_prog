@@ -116,7 +116,7 @@ char ** _parser(char *line)
 
 
 /**
- * copy_token - adds a node to the beginning of a list
+ * copy_token - copy the token
  * @len: string len to copy
  * @flag: alpha or nums
  * @tok: strings of tokens
