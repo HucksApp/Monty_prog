@@ -55,7 +55,10 @@ int count_token_char(char *line, int flag)
     char_check = fn(flag);
     for (index = 0; line[index]; index++)
     {
-        if(char_check(line[index]))
+        if (line[index] =='#')
+            return (0);
+        
+        else if(char_check(line[index]))
         {
             do
                 count++, index++;

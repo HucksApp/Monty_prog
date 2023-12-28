@@ -34,11 +34,6 @@ void monty(char** argv)
             if(tokens)
             {
                 obj._tokens = tokens;
-                if(obj._tokens[0] == NULL || obj._tokens[0][0] == '#')
-                {
-                    garbageCollector(_FALSE);
-                    continue;
-                }
                 execute_func = find_opcode(obj._tokens);
                
                 if(!execute_func)
