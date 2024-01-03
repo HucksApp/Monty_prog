@@ -17,7 +17,7 @@ void monty(char** argv)
     int read_bytes = 0;
     char ** tokens = NULL ;
 
-    void (*execute_func)(stackk_t **, unsigned int);
+    void (*operatn_instructn)(stackk_t **, unsigned int);
     
     (void) read_bytes;
 
@@ -34,12 +34,12 @@ void monty(char** argv)
             if(tokens)
             {
                 obj._tokens = tokens;
-                execute_func = find_opcode(obj._tokens);
+                operatn_instructn = find_opcode(obj._tokens);
                
-                if(!execute_func)
+                if(!operatn_instructn)
                     operatn_err();
                 
-                execute_func(&(obj._stack), obj.line_num);
+                operatn_instructn(&(obj._stack), obj.line_num);
                 garbageCollector(_FALSE); 
             }
     }
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     if (args_err(argc))
     {
         dprintf(STDERR_FILENO, USAGE);
-		exit(EXIT_FAILURE);
+	exit(EXIT_FAILURE);
     }
     monty(argv);
     return (EXIT_SUCCESS);
