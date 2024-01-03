@@ -20,23 +20,22 @@ void _nop(stackk_t **stack, UNUSED unsigned int line_num)
  */
 void _add(stackk_t **stack, UNUSED unsigned int line_num)
 {
-    int sum = 0;
+	int sum = 0;
 	stackk_t *node0 = NULL, *node1 = NULL, *new = NULL;
 
-    if(sNodesLen(*stack) < 2)
-       instruction_err(ADD_FAIL);
-    
-    node0 = _getSNodeAt(*stack, 0);
-    node1 = _getSNodeAt(*stack, 1);
-
-
-    sum = node0->n + node1->n;
-
-    _deleteSNodeAt(stack, 0);
-    _deleteSNodeAt(stack, 0);
-    new = _prependSNode(stack, sum);
-    if(!new)
-        memory_err();
+	if(sNodesLen(*stack) < 2)
+       		instruction_err(ADD_FAIL);
+	    
+	node0 = _getSNodeAt(*stack, 0);
+	node1 = _getSNodeAt(*stack, 1);
+	
+	sum = node0->n + node1->n;
+	
+	_deleteSNodeAt(stack, 0);
+	_deleteSNodeAt(stack, 0);
+	new = _prependSNode(stack, sum);
+	if(!new)
+		memory_err();
 }
 
 
@@ -52,8 +51,8 @@ void _sub(stackk_t **stack, UNUSED unsigned int line_num)
 	int sub = 0;
 	stackk_t *node0 = NULL, *node1 = NULL, *new = NULL;
 
-    if(sNodesLen(*stack) < 2)
-       instruction_err(SUB_FAIL);
+    	if(sNodesLen(*stack) < 2)
+       		instruction_err(SUB_FAIL);
 
 	node0 = _getSNodeAt(*stack, 0);
 	node1 = _getSNodeAt(*stack, 1);
@@ -63,7 +62,7 @@ void _sub(stackk_t **stack, UNUSED unsigned int line_num)
 	_deleteSNodeAt(stack, 0);
 	new = _prependSNode(stack, sub);
 	if (!new)
-        memory_err();
+        	memory_err();
 }
 
 
@@ -79,15 +78,15 @@ void _div(stackk_t **stack, UNUSED unsigned int line_num)
 	int div = 0;
 	stackk_t *node0 = NULL, *node1 = NULL, *new = NULL;
 
-    if(sNodesLen(*stack) < 2)
-       instruction_err(DIV_FAIL);
+    	if(sNodesLen(*stack) < 2)
+       		instruction_err(DIV_FAIL);
 
-    node0 = _getSNodeAt(*stack, 0);
+    	node0 = _getSNodeAt(*stack, 0);
 	node1 = _getSNodeAt(*stack, 1);
 
 
-	if (node0->n == 0)
-         instruction_err(DIV_ZERO);
+	if(node0->n == 0)
+        	instruction_err(DIV_ZERO);
 	
 
 	div = node1->n / node0->n;
@@ -96,7 +95,7 @@ void _div(stackk_t **stack, UNUSED unsigned int line_num)
 	_deleteSNodeAt(stack, 0);
 	new = _prependSNode(stack, div);
 	if (!new)
-        memory_err();
+        	memory_err();
 }
 
 
@@ -109,13 +108,13 @@ void _div(stackk_t **stack, UNUSED unsigned int line_num)
 void _mul(stackk_t **stack, UNUSED unsigned int line_num)
 {
 
-    int mul = 0;
+    	int mul = 0;
 	stackk_t *node0 = NULL, *node1 = NULL, *new = NULL;
 
-    if(sNodesLen(*stack) < 2)
-       instruction_err(MUL_FAIL);
+    	if(sNodesLen(*stack) < 2)
+       		instruction_err(MUL_FAIL);
 
-    node0 = _getSNodeAt(*stack, 0);
+    	node0 = _getSNodeAt(*stack, 0);
 	node1 = _getSNodeAt(*stack, 1);
 
 	
@@ -124,7 +123,7 @@ void _mul(stackk_t **stack, UNUSED unsigned int line_num)
 	_deleteSNodeAt(stack, 0);
 	new = _prependSNode(stack, mul);
 	if (!new)
-        memory_err();
+        	memory_err();
 }
 
 
