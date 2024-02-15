@@ -1,18 +1,18 @@
-### monty👾
+# monty👾
 **C - Stacks, Queues - LIFO, FIFO**
 
 ## Description
 This ALX School project is a custom ByteCode interpreter, coded in C.
 
-# Compilation
+## Compilation
 `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
-# Usage
+### Usage
 
 `$ ./monty byte_file.m`
 
 The program reads from the file "byte_file.m" that contains one instruction per line. It then calls the right function to modify a stack according to the instruction. It prints custom error messages if the instruction is wrong
 
-## Table of Contents 🫚
+### Table of Contents 🫚
 
 File                                       |             Description
 -------------------------------------------|-----------------------------------
@@ -27,6 +27,6 @@ macros.h                                   | All predefined constant Macros
 strUtilities.c                             | string manipulation helper functions
 monty.h                                    | monty header file
 
-# Authors 🖋
+### Authors 🖋
 Abiodun Aremu ~ HucksApp@gmail.com :
 
