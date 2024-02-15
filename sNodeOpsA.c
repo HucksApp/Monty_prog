@@ -40,7 +40,8 @@ int _deleteSNodeAt(stackk_t **head, unsigned int pos)
         (*head) = curr->next;
         if((*head) && (*head)->next)
         /* the new head node  */
-            (*head)->next->prev = NULL;
+            /*(*head)->next->prev = NULL;*/
+            (*head)->prev = NULL;
         curr->next = NULL; /*detach the del node*/
         free(curr);
         return(_TRUE);
