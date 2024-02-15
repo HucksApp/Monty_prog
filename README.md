@@ -4,7 +4,7 @@
 ## Description
 This ALX School project is a custom ByteCode interpreter, coded in C.
 
-#Compilation
+# Compilation
 `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 # Usage
 
