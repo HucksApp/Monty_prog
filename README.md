@@ -2,7 +2,9 @@
 **C - Stacks, Queues - LIFO, FIFO**
 
 ## Description
-This ALX School project is a custom ByteCode interpreter, coded in C. Compilation: gcc -Wall -Werror -Wextra -pedantic *.c -o monty 
+This ALX School project is a custom ByteCode interpreter, coded in C.
+**Compilation**
+`gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 # Usage
 
 `$ ./monty byte_file.m`
