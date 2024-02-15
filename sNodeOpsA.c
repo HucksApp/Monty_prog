@@ -38,7 +38,7 @@ int _deleteSNodeAt(stackk_t **head, unsigned int pos)
     if(!pos) /* index is top 0*/
     { /* advance the head to next*/    
         (*head) = curr->next;
-        if((*head) && (*head)->next)
+        if((*head))
         /* the new head node  */
             /*(*head)->next->prev = NULL;*/
             (*head)->prev = NULL;
