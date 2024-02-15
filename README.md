@@ -16,7 +16,7 @@ The program reads from the file "byte_file.m" that contains one instruction per 
 
 File                                       |             Description
 -------------------------------------------|-----------------------------------
-operatnCode<A - c>.c                       | Monty operation handlers
+operatnCode<A - C>.c                       | Monty operation handlers
 sNodeOps<A - B>.c                          | Double linked list nodes operation handler
 parser                                     | File text lines parser functions
 memory.c                                   | Memory helper functions
