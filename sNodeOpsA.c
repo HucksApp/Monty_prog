@@ -81,15 +81,15 @@ stackk_t *_prependSNode(stackk_t **head, const int num)
     top = createSNode(num);
     if(top)
     {
-    /* attach at start and point to the rest*/
-    top->next = *head;
-
-    if((*head))
-    /*point the previous 1st node to the new 1st node*/
-        (*head)->prev = top;
-    *head = top;
-
-    return (top);
+        /* attach at start and point to the rest*/
+        top->next = *head;
+    
+        if((*head))
+        /*point the previous 1st node to the new 1st node*/
+            (*head)->prev = top;
+        *head = top;
+    
+        return (top);
     }
     return (NULL);
     
