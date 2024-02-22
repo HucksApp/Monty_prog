@@ -3,7 +3,8 @@
 
 ## Description
 This ALX School project is a custom ByteCode interpreter, coded in C.
-
+**stack (LIFO):** Last in First out, Follows the principle  ***The last element to be added to the stack is the first element of the stack***
+**Queue (FIFO):** First in First out, Follows the principle  ***The first element to be added to the stack is the first element of the stack***
 
 ### Table of Contents 🫚
 
@@ -40,7 +41,7 @@ push                                      | Push a value to the stack -> `push <
 pall                                       | Print all element in stack -> `pall`
 pint                                       | Print element at the top of the stack -> `pint`
 pop                                        | Remove element at the top of the stack -> `pop`
-nop                                        | Does Nothing -> `pop`
+nop                                        | Does Nothing -> `nop`
 add                                        | Add the top two elements of the stack -> `add`
 sub                                        | Subtract the top element of the stack from the second top element of the stack -> `sub`
 div                                        | Divide the second top element of the stack by the top element of the stack -> `div`
