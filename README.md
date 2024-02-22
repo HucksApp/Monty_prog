@@ -54,7 +54,7 @@ pstr                                       | prints the string starting at the t
 rotl                                       | rotates the stack to the top -> `rotl`
 rotr                                       | rotates the stack to the bottom -> `rotr`
 stack                                      | sets the format of the data to a stack (LIFO). This is the default behavior of the program -> `stack`
-queue                                      | sets the format of the data to a queue (FIFO) -> `stack`
+queue                                      | sets the format of the data to a queue (FIFO) -> `queue`
 
 
 ### Authors 🖋
