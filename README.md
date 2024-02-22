@@ -24,7 +24,7 @@ strUtilities.c                             | string manipulation helper function
 monty.h                                    | monty header file
 
 
-## Compilation
+## Compilation 🧱
 `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 ### Usage
 
