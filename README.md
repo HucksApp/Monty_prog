@@ -47,12 +47,10 @@ mul                                        | Multiply the top two elements of th
 mod                                        | computes the rest of the division of the second top element of the stack by the top element of the stack -> `mod`
 pchar                                      | prints the char at the top of the stack, followed by a new line  -> `pchar`
 pstr                                       | prints the string starting at the top of the stack, followed by a new line -> `pstr`
- 
-
-rotl                                    | rotates the stack to the top -> `rotl`
-rotr                                    | rotates the stack to the bottom -> `rotr`
-stack                                   | sets the format of the data to a stack (LIFO). This is the default behavior of the program -> `stack`
-queue                                    | sets the format of the data to a queue (FIFO) -> `stack`
+rotl                                       | rotates the stack to the top -> `rotl`
+rotr                                       | rotates the stack to the bottom -> `rotr`
+stack                                      | sets the format of the data to a stack (LIFO). This is the default behavior of the program -> `stack`
+queue                                      | sets the format of the data to a queue (FIFO) -> `stack`
 
 
 ### Authors 🖋
