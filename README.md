@@ -8,7 +8,7 @@ This ALX School project is a custom ByteCode interpreter, coded in C.
 
 **Queue (FIFO):** First in First out, Follows the principle  ***The first element to be added to the stack is the first element of the stack***
 
-### Table of Contents 🫚
+### Table of Contents 📋
 
 File                                       |             Description
 -------------------------------------------|-----------------------------------
