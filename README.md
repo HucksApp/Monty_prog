@@ -4,7 +4,7 @@
 ## Description
 This ALX School project is a custom ByteCode interpreter, coded in C.
 
-**stack (LIFO):** Last in First out, Follows the principle  ***The last element to be added to the stack is the first element of the stack***
+**Stack (LIFO):** Last in First out, Follows the principle  ***The last element to be added to the stack is the first element of the stack***
 
 **Queue (FIFO):** First in First out, Follows the principle  ***The first element to be added to the stack is the first element of the stack***
 
@@ -24,7 +24,7 @@ strUtilities.c                             | string manipulation helper function
 monty.h                                    | monty header file
 
 
-## Compilation 🧱
+## Compilation 🛠️ 🧱
 `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 ### Usage
 
