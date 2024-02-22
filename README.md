@@ -35,8 +35,8 @@ The program reads from the file "byte_file.m" that contains one instruction per 
 
 Commands                                   |             Description and Usage
 -------------------------------------------|---------------------------------------------------
-`#`                                         | Monty comments: anything after the symbol is not processed -> `# this is push`
-`push`                                      | Push a value to the stack -> `push <value> `
+\#                                         | Monty comments: anything after the symbol is not processed -> `# this is push`
+push                                      | Push a value to the stack -> `push <value> `
 pall                                       | Print all element in stack -> `pall`
 pint                                       | Print element at the top of the stack -> `pint`
 pop                                        | Remove element at the top of the stack -> `pop`
