@@ -10,18 +10,18 @@ This ALX School project is a custom ByteCode interpreter, coded in C.
 
 ### Table of Contents 📋
 
-File                                       |             Description
--------------------------------------------|-----------------------------------
-operatnCode<A - C>.c                       | Monty operation handlers
-sNodeOps<A - B>.c                          | Double linked list nodes operation handler
-parser                                     | File text lines parser functions
-memory.c                                   | Memory helper functions
-errorA.c                                   | All mounty error handlers
-find.c                                     | Monty command search handler
-monty.c                                    | monty program entry point
-macros.h                                   | All predefined constant Macros
-strUtilities.c                             | string manipulation helper functions
-monty.h                                    | monty header file
+File                                                          |             Description
+--------------------------------------------------------------|-----------------------------------
+operatnCode<A - C>.c                                          | Monty operation handlers
+sNodeOps<A - B>.c                                             | Double linked list nodes operation handler
+[parser](./parser.c)                                          | File text lines parser functions
+[memory.c](./memory.c)                                        | Memory helper functions
+[errorA.c](./errorA.c)                                        | All mounty error handlers
+[find.c](./find.c)                                            | Monty command search handler
+[monty.c](./[monty.c)                                         | monty program entry point
+[macros.h](./macros.h)                                        | All predefined constant Macros
+[strUtilities.c](.[strUtilities.c)                            | string manipulation helper functions
+[monty.h](./monty.h)                                          | monty header file
 
 
 ## Compilation 🛠️ 🧱
@@ -39,7 +39,7 @@ The program reads from the file "byte_file.m" that contains one instruction per 
 Commands                                   |             Description and Usage
 -------------------------------------------|---------------------------------------------------
 \#                                         | Monty comments: anything after the symbol is not processed -> `# this is push`
-push                                      | Push a value to the stack -> `push <value> `
+push                                       | Push a value to the stack -> `push <value> `
 pall                                       | Print all element in stack -> `pall`
 pint                                       | Print element at the top of the stack -> `pint`
 pop                                        | Remove element at the top of the stack -> `pop`
